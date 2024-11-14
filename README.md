@@ -8,6 +8,11 @@ Please excuse the chaos, I haven't written in Java / Spring in over 4 years, but
 
 You should have Java 17 and Maven installed to run this application.
 
+Clone the repository:
+```
+git clone git@github.com:CorvusCloudburst/device-readings.git
+```
+
 To get the local application running, use the following commands in the project root:
 
 ```
@@ -18,7 +23,7 @@ mvn clean install
 ./mvnw spring-boot:run
 ```
 
-For a quick and easy sanity check to ensure the application is running as expected, you can try the following api call:
+For a quick and easy sanity check to ensure the application is running as expected, you can try the following api call in another terminal window:
 ```
 curl http://localhost:8080/api/test
 ```
