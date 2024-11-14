@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>interview</groupId>
+	<groupId>corvus.interviews</groupId>
 	<artifactId>device-readings</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>device-readings</name>
-	<description>Take home project for Brightwheel</description>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

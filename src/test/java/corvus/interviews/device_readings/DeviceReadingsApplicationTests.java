@@ -1,4 +1,4 @@
-package interview.device_readings;
+package corvus.interviews.device_readings;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

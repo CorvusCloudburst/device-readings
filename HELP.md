@@ -1,7 +1,3 @@
-# Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'interview.device-readings' is invalid and this project uses 'interview.device_readings' instead.
 
 # Getting Started
 
