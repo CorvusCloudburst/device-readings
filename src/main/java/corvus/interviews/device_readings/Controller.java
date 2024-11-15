@@ -1,17 +1,12 @@
 package corvus.interviews.device_readings;
 
-import java.rmi.ServerException;
-import java.util.Date;
-
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import corvus.interviews.device_readings.device.DeviceReading;
 import corvus.interviews.device_readings.requests.CumulativeCountResponse;
 import corvus.interviews.device_readings.requests.DeviceReadingPostRequest;
 import corvus.interviews.device_readings.requests.LatestTimestampResponse;
-import corvus.interviews.device_readings.DeviceService;
 
 @RestController
 public class Controller {
@@ -51,6 +46,7 @@ public class Controller {
     public ResponseEntity<Object> getCumulativeDeviceCount(@PathVariable String deviceId) {
         try {
             CumulativeCountResponse countResponse = new CumulativeCountResponse(deviceService.getCumulativeCount(deviceId));
+            System.out.println(countResponse.toString());
             return new ResponseEntity<>(countResponse, HttpStatus.OK);
         } catch (Exception e) {
             System.out.println(e.getMessage());

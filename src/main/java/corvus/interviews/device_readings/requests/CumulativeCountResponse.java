@@ -8,7 +8,7 @@ public class CumulativeCountResponse {
         this.cumulative_count = count;
     }
 
-    public int getCumulativeCount() {
+    public int getCumulative_count() {
         return cumulative_count;
     }
 }
